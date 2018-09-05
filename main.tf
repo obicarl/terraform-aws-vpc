@@ -462,7 +462,7 @@ resource "aws_vpn_gateway_route_propagation" "private" {
 # Defaults
 ###########
 resource "aws_default_vpc" "this" {
-  count = "${var.manage_default_vpc ? 1 : 0}"
+  count = "${var.manage_default_vpc ? 2 : 0}"
 
   enable_dns_support   = "${var.default_vpc_enable_dns_support}"
   enable_dns_hostnames = "${var.default_vpc_enable_dns_hostnames}"
