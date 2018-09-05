@@ -470,5 +470,3 @@ resource "aws_default_vpc" "this" {
 
   tags = "${merge(map("Name", format("%s", var.default_vpc_name)), var.default_vpc_tags, var.tags)}"
 }
-
-resource "null_resource" "n" {}
